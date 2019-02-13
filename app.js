@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const path = require('path');
+const util = require('./lib/utils');
 
 require('dotenv').config();
 
@@ -22,6 +22,24 @@ app.get('/contact', function(req, res) {
 });
 
 app.post('/register', function(req, res) {
+    
+    const email = typeof(req.body.email) === 'string' && req.body.email.length > 0 && util.validateEmail(email) ? req.body.email : false;
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+
+    if(email) {
+
+        // Add to email list
+        util.addToMailingList(email, ip, function(err, msg) {
+            if(!err) {
+                res.status(200).json({});
+            } else {
+                res.status(403).json({'Error': msg});
+            }
+        });
+
+    } else {
+        res.status(403).json({'Error': 'Missing required fields.'});
+    }
 
 });
 
