@@ -1,5 +1,5 @@
 {
-  "name": "coming_soon_page",
+  "name": "upcoming_web",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BCA-CTF/coming_soon_page.git"
+    "url": "git+https://github.com/BCA-CTF/upcoming_web.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BCA-CTF/coming_soon_page/issues"
+    "url": "https://github.com/BCA-CTF/upcoming_web/issues"
   },
-  "homepage": "https://github.com/BCA-CTF/coming_soon_page#readme",
+  "homepage": "https://github.com/BCA-CTF/upcoming_web#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
