@@ -22,7 +22,7 @@ app.get('/contact', function(req, res) {
 });
 
 app.post('/register', function(req, res) {
-    
+
     const email = typeof(req.body.email) === 'string' && req.body.email.length > 0 && util.validateEmail(email) ? req.body.email : false;
     const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
@@ -48,7 +48,7 @@ app.get('/register', function(req, res) {
 });
 
 app.get('*', function(req, res) {
-    res.render('index.ejs');
+    res.redirect('/');
 });
 
 
