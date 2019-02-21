@@ -1,2 +1,2 @@
-# coming_soon_page
+# upcoming_web
 The Landing Page for upcoming BCA CTF
