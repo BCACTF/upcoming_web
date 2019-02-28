@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const util = require('./lib/utils');
-
 require('dotenv').config();
+
+const util = require('./lib/utils');
 
 const app = express();
 
