@@ -17,8 +17,28 @@ app.get('/', function(req, res) {
     res.render('index.ejs');
 });
 
+app.get('/about', function(req, res) {
+    res.render('about.ejs');
+});
+
+app.get('/faq', function(req, res) {
+    res.render('faq.ejs');
+});
+
 app.get('/contact', function(req, res) {
     res.render('contact.ejs');
+});
+
+app.get('/rules', function(req, res) {
+    res.render('rules.ejs');
+});
+
+app.get('/get-started', function(req, res) {
+    res.render('get-started.ejs');
+});
+
+app.get('/login', function(req, res) {
+    res.render('login.ejs');
 });
 
 app.post('/register', function(req, res) {
