@@ -14,7 +14,12 @@ body {
 
 nav {
     height: 95px;
-
+    background: #263238;
+}
+.pageContent {
+    background: #37474F;
+    color: #e5e5e5;
+    text-align: center;
 }
 
 .fa-1x {
