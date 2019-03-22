@@ -10,6 +10,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 12px;
+    background: #37474F;
 }
 
 nav {
@@ -17,9 +18,9 @@ nav {
     background: #263238;
 }
 .pageContent {
-    background: #37474F;
     color: #e5e5e5;
     text-align: center;
+    padding: 14px
 }
 
 .fa-1x {
