@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-    height: 11.6vh;
+    min-height: 11.6vh;
     background: #263238;
     margin-bottom: 32px;
     padding-right: 10.4166667% !important;
@@ -20,7 +20,28 @@ nav {
 nav .nav-logo {
     font-size: 28px;
     font-weight: 800;
+    color: #FFFFFF;
 }
+
+nav .nav-menu-item {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF !important;
+}
+
+nav .nav-menu-item:hover {
+    color: #66bb6a !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+    }    
 
 h1 {
     font-weight: 800;
