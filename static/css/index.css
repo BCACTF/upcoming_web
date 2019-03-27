@@ -7,6 +7,7 @@ body {
     padding: 0px;
     font-size: 12px;
     background: #37474F;
+    overflow-x: hidden;
 }
 
 nav {
@@ -134,4 +135,9 @@ h1 {
 }
 .dark-teal-text {
     color: #004d40;
+}
+
+#logo {
+    width: 55%;
+    height: 55%;
 }
