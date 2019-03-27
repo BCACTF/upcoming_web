@@ -1,5 +1,21 @@
 <%- include("header.ejs") %>
-<div class="pageContent">
-    <h1>Contact</h1>
+<div class="contact pageContent">
+    <h1>CONTACT</h1>
+    <form>
+
+            <p>We’re constantly working to represent the student body.  If you have any ideas, questions for us or the administration, or concerns, feel free to let us know here!</p>
+            
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" data-gramm_editor="false" placeholder="Message"></textarea>
+
+            <div class="btn-div">
+                <button type="submit">SEND</button>
+            </div>
+
+    </form>
+    
+    
 </div>
 <%- include("footer.ejs") %>

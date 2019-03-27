@@ -10,13 +10,90 @@ body {
 }
 
 nav {
-    height: 95px;
+    height: 11.6vh;
     background: #263238;
+    margin-bottom: 32px;
+    padding-right: 10.4166667% !important;
+    padding-left: 10.4166667% !important;
 }
+
+nav .nav-logo {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 14px;
+    padding-right: 21.25%;
+    padding-left: 21.25%;
+}
+
+.contact form {
+    padding-right: 29.86%;
+    padding-left: 29.86%;
+}
+
+.contact form p {
+    font-size: 16px;
+    padding-right: 6.88%;
+    padding-left: 6.88%;
+    padding-bottom: 18px;
+}
+
+.contact form input {
+    width: 61.27%;
+    padding: 6px 24px;
+    border-radius: 5px;
+    height: 42px;
+    margin-bottom: 16px;
+    background-color: #263238;
+    border: 0px solid;
+    color: #FFFFFF;
+}
+
+.contact form input::placeholder {
+    color: #FFFFFF;
+}
+
+.contact form textarea {
+    width: 61.27%;
+    padding: 12px 24px;
+    border-radius: 5px;
+    min-height: 166px;
+    margin-bottom: 18px;
+    background-color: #263238;
+    border: 0px solid;
+    color: #FFFFFF;
+}
+
+.contact form textarea::placeholder {
+    color: #FFFFFF;
+}
+
+.contact form .btn-div {
+    width: 61.27%;
+    margin: 0 auto;
+}
+
+.contact form .btn-div button {
+    width: 42.93%;
+    border-radius: 8px;
+    height: 31px;
+    background-color: #4CAF50;
+    border: 0px solid;
+    color: #FFFFFF;
+    display: block;
+}
+
 .pageContent {
     color: #e5e5e5;
     text-align: center;
-    padding: 14px
+    padding: 0;
 }
 
 .fa-1x {
