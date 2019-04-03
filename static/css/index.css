@@ -93,6 +93,25 @@ h1 {
     color: #FFFFFF;
 }
 
+.faqScreensGrid {
+    display: grid;
+    grid-auto-rows: 3;
+}
+
+.faqScreen {
+    color: #4CAF50;
+    width: 40%;
+    background: #263238;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.faqScreenHeaderBar {
+    background: #D6D6D6;
+    width: 40%;
+    height: 5%;
+}
+
 .contact form textarea::placeholder {
     color: #FFFFFF;
 }
