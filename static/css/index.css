@@ -93,6 +93,10 @@ h1 {
     color: #FFFFFF;
 }
 
+.faqPageContent {
+    color: #FFFFFF;
+}
+
 .faqScreensGrid {
     display: flex;
     flex-wrap: wrap;
