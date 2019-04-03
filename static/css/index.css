@@ -94,15 +94,19 @@ h1 {
 }
 
 .faqScreensGrid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-auto-rows: 3;
+    margin: auto
 }
 
 .faqScreen {
     color: #4CAF50;
-    width: 40%;
+    width: 30%;
     background: #263238;
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 15px;
 }
 
