@@ -10,8 +10,8 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use('/static', express.static('static'));
-
 
 app.get('/', function(req, res) {
     res.render('index.ejs');
@@ -43,7 +43,7 @@ app.get('/login', function(req, res) {
 
 app.post('/register', function(req, res) {
 
-    const email = typeof(req.body.email) === 'string' && req.body.email.length > 0 && util.validateEmail(email) ? req.body.email : false;
+    const email = typeof(req.body.email) === 'string' && req.body.email.length > 0 && util.validateEmail(req.body.email) ? req.body.email : false;
     const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
     if(email) {
