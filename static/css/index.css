@@ -5,7 +5,7 @@ body {
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 12px;
+    font-size: 14px;
     background: #37474F;
     overflow-x: hidden;
 }
@@ -67,7 +67,7 @@ h1 {
     padding-bottom: 18px;
 }
 
-.contact form input {
+.contact form input, .darkInput {
     width: 61.27%;
     padding: 6px 24px;
     border-radius: 5px;
@@ -78,7 +78,7 @@ h1 {
     color: #FFFFFF;
 }
 
-.contact form input::placeholder {
+.contact form input::placeholder, .darkInput::placeholder {
     color: #FFFFFF;
 }
 
@@ -167,7 +167,6 @@ h1 {
 
 #logo {
     width: 55%;
-    height: 55%;
 }
 
 .titlebar {
@@ -198,3 +197,8 @@ h1 {
   .screencont {
       padding: 7px;
   }
+
+.centerText {
+    text-align: center;
+    margin: auto;
+}
