@@ -192,6 +192,7 @@ h1 {
 
 .titlebar-decoration.mac {
     text-align: left;
+    padding-left: 2px;
 }
 
 .titlebar-decoration.mac > span {
@@ -200,8 +201,18 @@ h1 {
     width: 10px;
     border-radius: 50%;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 4px;
     background-color: darkslategrey;
+}
+
+.titlebar-decoration.mac > span:nth-child(1) {
+    background-color: rgb(255, 59, 48);
+}
+.titlebar-decoration.mac > span:nth-child(2) {
+    background-color: rgb(255, 204, 0);
+}
+.titlebar-decoration.mac > span:nth-child(3) {
+    background-color: rgb(40, 205, 65);
 }
 
   .screencont {
