@@ -6,7 +6,11 @@
             <% faq.forEach(question => { %>
             <div class="col-sm-12 col-md-6 col-lg-4 p-0">
                 <div class="faqScreen">
-                    <div class="titlebar"></div>
+                    <div class="titlebar">
+                        <div class="titlebar-decoration mac">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
                     <div class="screencont">
                         <h2><%-question.question %></h2>
                         <%-question.answer %>

@@ -179,7 +179,30 @@ h1 {
     -ms-user-select: none;
     -o-user-select: none;
     cursor: default;
-  }
+    position: relative;
+}
+
+.titlebar-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+}
+
+.titlebar-decoration.mac {
+    text-align: left;
+}
+
+.titlebar-decoration.mac > span {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: darkslategrey;
+}
 
   .screencont {
       padding: 7px;
