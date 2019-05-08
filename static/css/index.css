@@ -97,13 +97,6 @@ h1 {
     color: #FFFFFF;
 }
 
-.faqScreensGrid {
-    display: flex;
-    flex-wrap: wrap;
-    grid-auto-rows: 3;
-    margin: auto
-}
-
 .faqScreen {
     color: #4CAF50;
     width: 30%;
