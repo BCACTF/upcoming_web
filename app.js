@@ -13,6 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use('/static', express.static('static'));
 
+const faq = require('./data/faq.json');
+
 app.get('/', function(req, res) {
     res.render('index.ejs');
 });
@@ -22,7 +24,7 @@ app.get('/about', function(req, res) {
 });
 
 app.get('/faq', function(req, res) {
-    res.render('faq.ejs');
+    res.render('faq.ejs', {faq});
 });
 
 app.get('/contact', function(req, res) {

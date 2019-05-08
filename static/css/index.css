@@ -100,8 +100,11 @@ h1 {
 .faqScreen {
     color: #4CAF50;
     background: #263238;
-    margin: 0 4px 20px 4px;
+    margin: 0 6px 20px 6px;
     border-radius: 7px;
+    height: -webkit-calc(100% - 20px);
+    height: -moz-calc(100% - 20px);
+    height: calc(100% - 20px);
 }
 
 .contact form textarea::placeholder {
