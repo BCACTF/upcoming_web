@@ -97,28 +97,11 @@ h1 {
     color: #FFFFFF;
 }
 
-.faqScreensGrid {
-    display: flex;
-    flex-wrap: wrap;
-    grid-auto-rows: 3;
-    margin: auto
-}
-
 .faqScreen {
     color: #4CAF50;
-    width: 30%;
     background: #263238;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 4px 20px 4px;
     border-radius: 7px;
-}
-
-.faqScreenHeaderBar {
-    background: #D6D6D6;
-    width: 40%;
-    min-width: 20%;
-    height: 5%;
 }
 
 .contact form textarea::placeholder {
@@ -185,8 +168,8 @@ h1 {
     height: 20px;
     border-top: 1px solid #f3f1f3;
     border-bottom: 1px solid #b1aeb1;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
