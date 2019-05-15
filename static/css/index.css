@@ -223,3 +223,7 @@ h1 {
     text-align: center;
     margin: auto;
 }
+
+.get-updates-form {
+    max-width: 540px;
+}
