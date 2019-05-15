@@ -60,6 +60,9 @@ typings/
 # next.js build output
 .next
 
+# Database
+data.db
+
 # IDE folders
 .idea/
 *.iml
