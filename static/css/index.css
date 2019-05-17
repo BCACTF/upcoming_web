@@ -55,6 +55,10 @@ h1 {
     padding-left: 21.25%;
 }
 
+.about li {
+    margin-bottom: 1em;
+}
+
 .contact form {
     padding-right: 29.86%;
     padding-left: 29.86%;
