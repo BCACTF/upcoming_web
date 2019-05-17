@@ -67,7 +67,7 @@ h1 {
     padding-bottom: 18px;
 }
 
-.contact form input, .darkInput {
+.contact form input, .darkInput, .form-control:focus {
     width: 61.27%;
     padding: 6px 24px;
     border-radius: 5px;
