@@ -43,7 +43,7 @@ app.get('/login', function(req, res) {
     res.render('login.ejs');
 });
 
-app.post('/register', function(req, res) {
+app.post('/subscribe', function(req, res) {
 
     const email = typeof(req.body.email) === 'string' && req.body.email.length > 0 && util.validateEmail(req.body.email) ? req.body.email : false;
     const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
@@ -53,14 +53,15 @@ app.post('/register', function(req, res) {
         // Add to email list
         util.addToMailingList(email, ip, function(err, msg) {
             if(!err) {
-                res.status(200).json({});
+                res.status(200).render('subscribed.ejs');
             } else {
-                res.status(403).json({'Error': msg});
+                res.status(500).text("Internal server error. We have been notified of the problem.");
+                console.log(msg);
             }
         });
 
     } else {
-        res.status(403).json({'Error': 'Missing required fields.'});
+        res.status(403).text("Missing required fields. Please try again.");
     }
 
 });
