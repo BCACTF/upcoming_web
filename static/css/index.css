@@ -5,7 +5,7 @@ body {
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 14px;
+    font-size: 16px;
     background: #37474F;
     overflow-x: hidden;
 }
@@ -50,7 +50,7 @@ h1 {
 }
 
 .about p {
-    font-size: 14px;
+    font-size: 16px;
     padding-right: 21.25%;
     padding-left: 21.25%;
 }
