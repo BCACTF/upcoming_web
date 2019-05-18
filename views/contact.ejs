@@ -1,14 +1,14 @@
 <%- include("header.ejs") %>
 <div class="contact pageContent">
     <h1>CONTACT</h1>
-    <form>
+    <form method="post" action="/sent">
 
             <p>We’re constantly working to represent the student body.  If you have any ideas, questions for us or the administration, or concerns, feel free to let us know here!</p>
             
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" data-gramm_editor="false" placeholder="Message"></textarea>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" data-gramm_editor="false" placeholder="Message" required></textarea>
 
             <div class="btn-div">
                 <button type="submit">SEND</button>

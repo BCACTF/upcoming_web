@@ -31,6 +31,35 @@ app.get('/contact', function(req, res) {
     res.render('contact.ejs');
 });
 
+app.post('/sent', function(req, res) {
+
+    const email = typeof(req.body.email) === 'string' && req.body.email.length > 0 && util.validateEmail(req.body.email) ? req.body.email : false;
+    const name = typeof(req.body.name) === 'string' && req.body.name.length > 0 ? req.body.name : false;
+    const subject = typeof(req.body.subject) === 'string' && req.body.subject.length > 0 ? req.body.subject : false;;
+    const message = typeof(req.body.message) === 'string' && req.body.message.length > 0 ? req.body.message : false;;
+
+    if(email && name && subject && message) {
+
+        res.status(200).render('confirmation.ejs');
+
+        // Send message
+        /*
+        util.sendMessage(email, name, subject, message, function(err, msg) {
+            if(!err) {
+                res.status(200).render('confirmation.ejs');
+            } else {
+                res.status(500).text("Internal server error. We have been notified of the problem.");
+                console.log(msg);
+            }
+        });
+        */
+
+    } else {
+        res.status(403).text("Missing required fields. Please try again.");
+    }
+
+});
+
 app.get('/rules', function(req, res) {
     res.render('rules.ejs');
 });
