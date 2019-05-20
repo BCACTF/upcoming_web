@@ -84,13 +84,13 @@ app.post('/subscribe', function(req, res) {
             if(!err) {
                 res.status(200).render('subscribed.ejs');
             } else {
-                res.status(500).text("Internal server error. We have been notified of the problem.");
+                res.status(500).send("Internal server error. We have been notified of the problem.");
                 console.log(msg);
             }
         });
 
     } else {
-        res.status(403).text("Missing required fields. Please try again.");
+        res.status(403).send("Missing required fields. Please try again.");
     }
 
 });
