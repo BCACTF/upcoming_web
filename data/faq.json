@@ -14,5 +14,9 @@
   {
     "question": "I want some help learning how to do CTFs. What can I do?",
     "answer": "<p>After this CTF is over, We will be posting writeups for every problem, so if you get stuck on a problem, just wait until its over and the answers will be there! If you want to practice CTFs more we highly recommend <a href='https://ctflearn.com'>CTFLearn.</a></p>"
+  },
+  {
+    "question": "How do I solve a CTF problem?",
+    "answer": "<p>In a CTF problem, you are ultimately trying to look for a flag. Unless otherwise stated, each flag in our CTF will be in the form <code>bcactf{flag_text_here}</code>. When you find a flag, just submit it through the website on the problem and claim your points!</p>"
   }
 ]
