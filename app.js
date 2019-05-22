@@ -58,9 +58,11 @@ app.get('/get-started', function(req, res) {
     res.render('get-started.ejs');
 });
 
+/*
 app.get('/login', function(req, res) {
     res.render('login.ejs');
 });
+*/
 
 app.post('/subscribe', function(req, res) {
 
@@ -85,9 +87,11 @@ app.post('/subscribe', function(req, res) {
 
 });
 
+/*
 app.get('/register', function(req, res) {
     res.render('register.ejs');
 });
+*/
 
 app.get('*', function(req, res) {
     res.redirect('/');
